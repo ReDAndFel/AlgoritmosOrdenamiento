@@ -7,7 +7,7 @@ import services.JsonService as JS
 json_matrix_file_path = "./array.json"
 
 #Se generan los array del caso 1 y 2. Descomentar si aun no los ha generado
-ArrS.exec()
+#ArrS.exec()
 
 for i in range(2):
     
@@ -64,6 +64,14 @@ for i in range(2):
     elapsed_time = end_time - start_time
     JS.modify_property(json_times_file_path,"RadixSort1", elapsed_time)
     print("Tiempo de ejecución de RadixSort1:", elapsed_time, "segundos")
+    
+      # Se ejecuta el algoritmo RadixSort2
+    start_time = time.time()
+    array_result = AS.RadixSort2(array)
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    JS.modify_property(json_times_file_path,"RadixSort2", elapsed_time)
+    print("Tiempo de ejecución de RadixSort2:", elapsed_time, "segundos")
      
     # Se ejecuta el algoritmo TimSort
     start_time = time.time()

@@ -4,7 +4,7 @@ from algoritmos.GmoneSort import gnomeSort
 from algoritmos.HeapSort import heapSort
 from algoritmos.PigeonholeSort import pigeonhole_sort
 from algoritmos.RadixSort1 import radixSort
-#from algoritmos.RadixSort2 import sort
+from algoritmos.RadixSort2 import radixSort2
 from algoritmos.TimSort import timSort
 from algoritmos.TreeSort import treeins
 
@@ -25,6 +25,9 @@ def PigeonholeSort(array):
 
 def RadixSort1(array):
     return radixSort(array)
+
+def RadixSort2(array):
+    return radixSort2(array)
 
 def TimSort(array):
     return timSort(array)
