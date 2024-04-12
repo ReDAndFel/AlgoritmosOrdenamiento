@@ -1,31 +1,32 @@
-import JsonService as js
+from . import JsonService as JS
 import matplotlib.pyplot as plt
 import numpy as np
 
 json_times_file_path = "./times2.json"
-data = js.read_json(json_times_file_path)
 
-labels = list(data.keys())
-values = list(data.values())
+def exec():
+    data = JS.read_json(json_times_file_path)
+    labels = list(data.keys())
+    values = list(data.values())
 
-# Asegurarse de que todas las listas tengan el mismo tamaño
-min_length = len(labels)
-labels = labels[:min_length]
-values = values[:min_length]
+    # Ordenar los valores de manera descendente
+    sorted_values = sorted(values, reverse=True)
+    sorted_labels = [label for _, label in sorted(zip(values, labels), reverse=True)]
 
-fig, ax = plt.subplots(figsize=(12, 6))
+    # Asegurarse de que todas las listas tengan el mismo tamaño
+    min_length = len(sorted_labels)
+    sorted_labels = sorted_labels[:min_length]
+    sorted_values = sorted_values[:min_length]
 
-x = np.arange(min_length)
-width = 0.4
+    fig, ax = plt.subplots(figsize=(12, 6))
+    x = np.arange(min_length)
+    width = 0.4
+    rects = ax.bar(x - width/2, sorted_values, width)
 
-ax.bar(x - width/2, values, width)
-
-ax.set_xlabel('Algoritmo')
-ax.set_ylabel('Tiempo en segundos')
-ax.set_title('Comparación de tiempos algoritmos de ordenamiento')
-ax.set_xticks(x)
-ax.set_xticklabels(labels, rotation=90)
-ax.legend()
-
-plt.tight_layout()
-plt.show()
+    ax.set_xlabel('Algoritmo')
+    ax.set_ylabel('Tiempo en segundos')
+    ax.set_title('Comparación de tiempos algoritmos de ordenamiento')
+    ax.set_xticks(x)
+    ax.set_xticklabels(sorted_labels, rotation=90)
+    plt.tight_layout()
+    plt.show()

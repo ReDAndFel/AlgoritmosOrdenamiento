@@ -1,6 +1,6 @@
 # Algoritmo sacado de geeksforgeeks
 
-def gnomeSort( arr, n): 
+def gnomeSort(arr,n): 
     index = 0
     while index < n: 
         if index == 0: 

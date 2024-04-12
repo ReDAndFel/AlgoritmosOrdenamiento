@@ -100,3 +100,5 @@ def timSort(arr):
                 merge(arr, left, mid, right) 
   
         size = 2 * size 
+    
+    return arr    

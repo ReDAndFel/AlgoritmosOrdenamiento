@@ -1,11 +1,12 @@
 {
-    "TimSort":1.0,
-    "CombSort":2.0,
-    "TreeSort":3.0,
-    "PigeonholeSort":1.0,
-    "HeapSort":2.4,
-    "BitonicSort":1.3,
-    "GnomeSort":1.0,
-    "RadixSort1":4.0,
-    "RadixSort2":5.0
+    "TimSort": 5.00123405456543,
+    "CombSort": 9.158994913101196,
+    "TreeSort": 0.0,
+    "PigeonholeSort": 0.5929989814758301,
+    "HeapSort": 5.5669450759887695,
+    "BitonicSort": 17.346028566360474,
+    "GnomeSort": 76.0272,
+    "RadixSort1": 4.385047674179077,
+    "RadixSort2": 5.0,
+    "GmoneSort": 0.22798585891723633
 }

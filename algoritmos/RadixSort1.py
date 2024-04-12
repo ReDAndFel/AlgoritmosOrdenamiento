@@ -39,7 +39,6 @@ def countingSort(arr, exp1):
 
 
 def radixSort(arr):
-
 	# Find the maximum number to know number of digits
 	max1 = max(arr)
 
@@ -50,4 +49,9 @@ def radixSort(arr):
 	while max1 / exp >= 1:
 		countingSort(arr, exp)
 		exp *= 10
+  
+	return arr  
+  
+  
+  
 

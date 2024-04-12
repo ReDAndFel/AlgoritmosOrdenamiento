@@ -21,6 +21,6 @@ def read_json_array(json_matrix_file_path, case_index):
     with open(json_matrix_file_path, 'r') as json_matrix:
         data = json.load(json_matrix)
         case_key = f"caso{case_index}"
-        array1 = data[case_key]["array1"]
-        array2 = data[case_key]["array2"]
-        return array1, array2            
+        array = data[case_key]["array"]
+        return array
+                

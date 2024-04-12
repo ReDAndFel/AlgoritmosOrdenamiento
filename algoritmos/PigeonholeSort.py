@@ -22,3 +22,5 @@ def pigeonhole_sort(a):
             holes[count] -= 1
             a[i] = count + my_min
             i += 1
+    
+    return a        

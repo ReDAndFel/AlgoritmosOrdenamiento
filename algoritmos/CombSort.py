@@ -36,3 +36,5 @@ def combSort(arr):
             if arr[i] > arr[i + gap]:
                 arr[i], arr[i + gap]=arr[i + gap], arr[i]
                 swapped = True
+                
+    return arr            

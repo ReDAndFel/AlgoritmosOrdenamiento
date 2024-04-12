@@ -30,3 +30,4 @@ def bitonicSort(a, low, cnt,dire):
 # in ASCENDING order
 def sort(a,N, up):
     bitonicSort(a,0, N, up)
+    return a
