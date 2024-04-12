@@ -7,7 +7,7 @@ import services.JsonService as JS
 json_matrix_file_path = "./array.json"
 
 #Se generan los array del caso 1 y 2. Descomentar si aun no los ha generado
-#ArrS.exec()
+ArrS.exec()
 
 for i in range(2):
     

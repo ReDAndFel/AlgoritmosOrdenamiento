@@ -7,7 +7,7 @@ json_matrix_file_path = "./array.json"
 def generar_array(n):
     array = []
     for _ in range(n):
-        numero = random.randint(100000, 999999)  # Generar número aleatorio de 6 dígitos
+        numero = random.randint(10000000, 99999999)  # Generar número aleatorio de 6 dígitos
         array.append(numero)
     return array
 
