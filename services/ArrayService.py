@@ -15,7 +15,7 @@ def exec():
     data = {}
 
     for i in range(2):
-        n=1000  
+        n=30 
         size = pow(n, i+1)
         case_name = f"caso{i+1}"
         array = generar_array(size)

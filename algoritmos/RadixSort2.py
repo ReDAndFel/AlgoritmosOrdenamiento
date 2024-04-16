@@ -1,4 +1,4 @@
-#Algoritmos sacado del c
+#Algoritmos sacado del classroom
 
 class Node:
     def __init__(self, value=0):

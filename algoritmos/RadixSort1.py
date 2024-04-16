@@ -1,4 +1,4 @@
-# Al
+# Algoritmo sacado de geeksforgeeks
 
 
 def countingSort(arr, exp1):
@@ -34,8 +34,6 @@ def countingSort(arr, exp1):
 	i = 0
 	for i in range(0, len(arr)):
 		arr[i] = output[i]
-
-# Method to do Radix Sort
 
 
 def radixSort(arr):
