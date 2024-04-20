@@ -80,13 +80,13 @@ for i in range(2):
     elapsed_time = end_time - start_time
     JS.modify_property(json_times_file_path,"TimSort", elapsed_time)
     print("Tiempo de ejecución de TimSort:", elapsed_time, "segundos")
-    
+    """
     # Se ejecuta el algoritmo TreeSort
     start_time = time.time()
     array_result = AS.TreeSort(array)
     end_time = time.time()
     elapsed_time = end_time - start_time
     JS.modify_property(json_times_file_path,"TreeSort", elapsed_time)
-    print("Tiempo de ejecución de TreeSort:", elapsed_time, "segundos")
+    print("Tiempo de ejecución de TreeSort:", elapsed_time, "segundos")"""
 
 GS.exec()
