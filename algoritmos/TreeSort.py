@@ -3,7 +3,6 @@ class Node:
         self.key = item 
         self.left,self.right = None,None
 
-
 # Root of BST 
 root = Node() 
 

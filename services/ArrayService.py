@@ -13,13 +13,15 @@ def generar_array(n):
 
 def exec():
     data = {}
+    n=14 
 
     for i in range(2):
-        n=20 
-        size = pow(2, n+1)
+        size = pow(2, n)
         case_name = f"caso{i+1}"
         array = generar_array(size)
         data[case_name] = {"array": array}
+        print(f"Array hecho de 2 a la {n} = {size}")
+        n+=1
 
     with open(json_matrix_file_path, 'w') as file_json:
         json.dump(data, file_json)
